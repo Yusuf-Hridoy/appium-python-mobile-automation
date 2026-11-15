@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+reports/*
+!reports/.gitkeep
+logs/*
+!logs/.gitkeep
+apps/*.apk
+.pytest_cache/

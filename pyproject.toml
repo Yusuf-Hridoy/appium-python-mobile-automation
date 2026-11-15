@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "appium-framework"
+version = "0.1.0"
+description = "Python + Appium mobile automation framework for the SwagLabs Android app"
+requires-python = ">=3.10"
+dependencies = [
+    "Appium-Python-Client>=4.0.0",
+    "pytest>=8.0.0",
+    "pytest-html>=4.1.0",
+    "python-dotenv>=1.0.0",
+    "selenium>=4.15.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "flake8",
+]
+
+[tool.setuptools]
+packages = ["config", "drivers", "pages", "utils"]
+
+# Pytest configuration lives in pytest.ini
